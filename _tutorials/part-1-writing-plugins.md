@@ -130,12 +130,12 @@ for example, is actually a backslash and then an n, and not a newline character.
 
 ### Nickname commands
 
-Another decorator that takes rules, `@sopel.module.nickname_command`, is
+Another decorator that takes rules, `@sopel.module.nickname_commands`, is
 provided for convenience. This is basically the same as a regular rule, but it
 prefixes it with the name of the bot, followed by either a comma or a colon.
 
 So, for example, if the above command had instead had the decorator
-`@module.nickname_command('hello!?')`, and if the bot were running with the
+`@module.nickname_commands('hello!?')`, and if the bot were running with the
 nickname "Sopel", it would have matched on `Sopel, hello`, `Sopel: hello!`,
 etc.
 
